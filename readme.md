@@ -81,3 +81,10 @@ python_Levenshtein==0.12.2
 scikit_learn==0.24.2
 
 ```
+## Portfolio notes
+
+Architecture: Zeek logs -> feature preparation -> supervised and unsupervised models -> risk scoring -> analyst review.
+
+Examples should use sample or authorised data only.
+
+Limitations: model quality depends on log coverage, labelling and environment specific baselines.
