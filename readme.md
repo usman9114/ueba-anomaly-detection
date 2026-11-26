@@ -1,8 +1,27 @@
+<p align="center"><img src="docs/assets/hero.png" alt="Banner: a translucent sphere of regular network-flow lines and nodes (normal behaviour) with three amber points outside it, each joined by a dotted line (anomalies)" width="100%"></p>
+
 # User Entity Behavior Analytics (UEBA) Project
 
 ## Overview
 
 This project is a Flask-based application that focuses on User Entity Behavior Analytics (UEBA). It provides a set of APIs designed to connect with Elasticsearch for data retrieval and response generation. The project relies on Zeek (formerly known as Bro) as a primary data source and emphasizes its use.
+
+## How it fits together
+
+```mermaid
+flowchart LR
+    Z["Zeek logs<br/>conn, dns, http"] --> ES[("Elasticsearch")]
+    ES --> API["Flask API<br/>run.py"]
+    API --> SUP["Supervised models<br/>phishing, DGA,<br/>malicious URL and file download"]
+    API --> UNS["Unsupervised models<br/>K-Means, Isolation Forest"]
+    API --> EXF["Data exfiltration<br/>PCR"]
+    SUP --> RS["riskscoring.py<br/>scheduled, linear weighted<br/>score per user"]
+    UNS --> RS
+    EXF --> RS
+    RS --> AN["Analyst review"]
+    MB["mBAT<br/>trains models, builds<br/>baseline user profiles"] -.-> SUP
+    MB -.-> UNS
+```
 
 ## Data Source: Zeek (Bro)
 
@@ -88,3 +107,7 @@ Architecture: Zeek logs -> feature preparation -> supervised and unsupervised mo
 Examples should use sample or authorised data only.
 
 Limitations: model quality depends on log coverage, labelling and environment specific baselines.
+
+## Visual assets
+
+The banner illustration was generated from a written brief (`docs/assets/briefs/`, with the references it drew on); its sidecar `docs/assets/hero-art.png.json` records the prompt. Text is set in real type by `docs/assets/tools/compose_banner.py`. `docs/assets/social-preview.png` (1280x640) is for the repository's social preview.
