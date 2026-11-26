@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/assets/hero.png" alt="Banner: a translucent sphere of regular network-flow lines and nodes (normal behaviour) with three amber points outside it, each joined by a dotted line (anomalies)" width="100%"></p>
+<p align="center"><img src="docs/assets/hero.jpg" alt="Banner: a painted dusk sky where a flowing murmuration of dark starlings is followed by one red bird that has broken away on its own path, like an anomaly leaving the baseline. Title: UEBA anomaly detection." width="100%"></p>
 
 # User Entity Behavior Analytics (UEBA) Project
 
@@ -110,4 +110,4 @@ Limitations: model quality depends on log coverage, labelling and environment sp
 
 ## Visual assets
 
-The banner illustration was generated from a written brief (`docs/assets/briefs/`, with the references it drew on); its sidecar `docs/assets/hero-art.png.json` records the prompt. Text is set in real type by `docs/assets/tools/compose_banner.py`. `docs/assets/social-preview.png` (1280x640) is for the repository's social preview.
+The banner illustration was generated from a written brief (`docs/assets/briefs/`, with the references it drew on); its sidecar `docs/assets/hero-art.png.json` records the prompt. Text is set in real type by `docs/assets/tools/compose_banner.py`. `docs/assets/social-preview.jpg` (1280x640) is for the repository's social preview.

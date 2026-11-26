@@ -1,8 +1,8 @@
 {
-  "prompt": "Abstract network-traffic scene: many faint teal flow lines and small dim nodes forming a dense, regular cloud (normal behaviour baseline, drawn as a soft translucent teal sphere-shaped envelope), and two or three isolated bright amber glowing points clearly outside the envelope (anomalies), each with a thin dotted line back toward the cloud. Faint perspective grid floor. Wide technical illustration, aspect about 2:1, deep navy ink background (#0B1020), high contrast, soft glow, minimal modern clean style, not photoreal. The subject sits in the right two-thirds; the left third is calm, dark, empty space. No robots, no brains, no people, no circuit boards. Absolutely no text, letters, numbers, logos, watermarks, borders or UI.",
+  "prompt": "Painterly dusk sky in gouache and oil texture, cinematic and atmospheric. A huge swirling murmuration of hundreds of small dark starling silhouettes forms a flowing ribbon-like wave across the right two-thirds against a sunset gradient of deep violet, magenta and burnt orange. One single bird, painted bright vermilion red and slightly larger, has broken away from the flock and flies alone on a different path above it, leaving a thin faint trail. Wide 2:1 composition. The left third of the canvas stays quiet and low-detail so a title can be placed there. No text, letters, numbers, logos, watermarks, borders, people or robots.",
   "driver_model": "gpt-6-luna",
   "image_model": "gpt-image via codex $imagegen",
-  "created": "2026-11-26T21:07:52",
+  "created": "2026-11-26T21:15:58",
   "refs": [],
   "tool": "scout.chatgpt (codex exec, ChatGPT plan)",
   "note": "AI-generated. Not a product photo."
